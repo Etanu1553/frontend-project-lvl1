@@ -2,6 +2,9 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Etanu1553/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Etanu1553/frontend-project-lvl1/actions)",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/Etanu1553/frontend-project-lvl1/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/Etanu1553/frontend-project-lvl1#readme"
 }
