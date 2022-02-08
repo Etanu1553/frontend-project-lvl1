@@ -19,5 +19,8 @@
     "url": "https://github.com/Etanu1553/frontend-project-lvl1/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/Etanu1553/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Etanu1553/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
