@@ -5,8 +5,9 @@
 
 [![linterstatus](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml/badge.svg)](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml)
 
-Brain Game: Brain Even
-<div>[![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)</div>
+<h2>Brain Game</h2>
+<h3>Brain Even</h3>
+[![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
 
 <h2>Installation</h2>
 <h2>How to launch this games?</h2>
