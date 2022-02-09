@@ -7,3 +7,14 @@
 
 Brain Game: Brain Even
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
+
+Installation
+__________________________
+How to launch this games?:
+1. Install node.js in your sistem(https://nodejs.org/en/)
+2. Clonne this repositorie in your work directory
+3. Open your terminal
+4. Install dependensies use command  $ make install
+5. Install games use command $ make link
+6. Run gamee use command $ make game's title
+
