@@ -13,31 +13,23 @@ function getRandomInt(max) {
 // записываем его в константу
 export default function even() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
-  const answer = [];
+  let answer = 0;
   for (let i = 0; i < 3; i += 1) {
     const numForUser = getRandomInt(100);
     console.log(`Question: ${numForUser}`);
     const textAnswer = readlineSync.question('Your answer: ');
-    // const result = (textAnswer === 'yes' ? 0 : 1);
+    const result = (textAnswer === 'yes' ? 0 : 1);
     // console.log(result);
-    if (numForUser % 2 === 0 && textAnswer === 'yes') {
+    if (numForUser % 2 === result) {
       console.log('Correct!');
-      answer.push(i);
-    }
-    if (numForUser % 2 !== 0 && textAnswer === 'no') {
-      console.log('Correct!');
-      answer.push(i);
-    }
-    if (numForUser % 2 !== 0 && textAnswer === 'yes') {
-      console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'');
-      break;
-    }
-    if (numForUser % 2 === 0 && textAnswer === 'no') {
-      console.log('\'no\' is wrong answer ;(. Correct answer was \'yes\'');
+      answer += 1;
+    } else {
+      const neg = textAnswer === 'yes' ? 'no' : 'yes';
+      console.log(`'${textAnswer}' is wrong answer ;(. Correct answer was '${neg}'.`);
       break;
     }
   }
-  console.log(answer.length === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
+  console.log(answer === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }
 
 // arrAnswer.length === 1
