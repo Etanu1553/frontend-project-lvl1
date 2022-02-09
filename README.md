@@ -5,7 +5,6 @@
 
 [![linterstatus](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml/badge.svg)](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml)
 
-<<<<<<< HEAD
 Brain Game:
 =======
 Brain Even
