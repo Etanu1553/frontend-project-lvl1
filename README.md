@@ -10,7 +10,8 @@ Brain Game: Brain Even
 
 Installation
 __________________________
-How to launch this games?:
+
+<h1>How to launch this games?</h1>
 1. Install node.js in your sistem(https://nodejs.org/en/)
 2. Clonne this repositorie in your work directory
 3. Open your terminal
