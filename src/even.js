@@ -11,7 +11,7 @@ function getRandomInt(max) {
   return numRandom;
 }
 // записываем его в константу
-export default function questOne() {
+export default function even() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
   const answer = [];
   for (let i = 0; i < 3; i += 1) {
