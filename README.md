@@ -8,7 +8,7 @@
 Brain Game: Brain Even
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
 
-Installation
+<h2>Installation</h2>
 __________________________
 
 <h2>How to launch this games?</h2>
