@@ -8,8 +8,6 @@
 <<<<<<< HEAD
 Brain Game:
 =======
-Brain Game
->>>>>>> ed92753febefe8085d06e01fbac1481b30e0b680
 Brain Even
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
 
