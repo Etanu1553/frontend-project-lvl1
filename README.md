@@ -13,11 +13,11 @@ __________________________
 
 <h1>How to launch this games?</h1>
 <ol>
-  <li>Install node.js in your sistem(https://nodejs.org/en/)<li>
-  <li>Clonne this repositorie in your work directory<li>
-  <li>Open your terminal<li>
-  <li>Install dependensies use command  $ make install</li>
-  <li>Install games use command $ make link</li>
-  <li>Run gamee use command $ make game's title</li>
+  <li><h2>Install node.js in your sistem(https://nodejs.org/en/)</h2></li>
+  <li><h2>Clonne this repositorie in your work directory</h2></li>
+  <li><h2>Open your terminal</h2></li>
+  <li><h2>Install dependensies use command  $ make install</h2></li>
+  <li><h2>Install games use command $ make link</h2></li>
+  <li><h2>Run gamee use command $ make game's title</h2></li>
   </ol>
 
