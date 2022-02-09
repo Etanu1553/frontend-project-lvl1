@@ -12,10 +12,12 @@ Installation
 __________________________
 
 <h1>How to launch this games?</h1>
-1. Install node.js in your sistem(https://nodejs.org/en/)
-2. Clonne this repositorie in your work directory
-3. Open your terminal
-4. Install dependensies use command  $ make install
-5. Install games use command $ make link
-6. Run gamee use command $ make game's title
+<ol>
+  <li>Install node.js in your sistem(https://nodejs.org/en/)<li>
+  <li>Clonne this repositorie in your work directory<li>
+  <li>Open your terminal<li>
+  <li>Install dependensies use command  $ make install</li>
+  <li>Install games use command $ make link</li>
+  <li>Run gamee use command $ make game's title</li>
+  </ol>
 
