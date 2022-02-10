@@ -10,6 +10,6 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 }; // экспортируем рандомное число мин и макс
 
-const raund = 3; // количество раундов игр
+const round = 3; // количество раундов игр
 
-export { userName, getRandomInt, raund };
+export { userName, getRandomInt, round };
