@@ -3,7 +3,9 @@ env:
   es2021: true
   node: true
 extends:
-  - airbnb-base
+  - 'eslint:recommended'
+  - 'plugin:import/recommended'
+  - 'airbnb-base'
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaVersion: latest

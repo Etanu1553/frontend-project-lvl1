@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomInt, userName, round } from '../index.js';
 
-function calc() {
+export default function calc() {
   const arrSignsProblem = ['+', '-', '*'];
   let count = 0;
   console.log('What is the result of the expression?');
@@ -32,5 +32,3 @@ function calc() {
 
   console.log(count === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }
-
-export default calc();

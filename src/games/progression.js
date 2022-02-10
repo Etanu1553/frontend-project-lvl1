@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { userName, getRandomInt, round } from '../index.js';
 
-function progression() {
+export default function progression() {
   let count = 0;
   console.log('What number is missing in the progression?');
   for (let i = 0; i < round; i += 1) {
@@ -27,5 +27,3 @@ function progression() {
   }
   console.log(count === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }
-
-export default progression();

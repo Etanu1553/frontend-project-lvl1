@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { userName, getRandomInt, round } from '../index.js';
 
-function even() {
+export default function even() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
   let answer = 0;
   for (let i = 0; i < round; i += 1) {
@@ -21,5 +21,3 @@ function even() {
   }
   console.log(answer === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }
-
-export default even();
