@@ -7,15 +7,20 @@
 
 Brain Game:
 ===========
-
-Brain-Even
-[![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
-
-Brain-Calc
-[![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)
-
-Brain-gcd
-[![asciicast](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem.svg)](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem)
+<table>
+    <tr>
+      <th>Brain Game</th>
+    </tr>
+      <tr>
+        <td>Brain-Even [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)</td>
+        </tr>
+      <tr>
+        <td>Brain-Calc [![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)</td>
+        </tr>
+        <tr>
+        <td>Brain-gcd  [![asciicast](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem.svg)](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem)</td>
+      </tr>
+</table>
 
 <h2>Installation</h2>
 <h2>How to launch this games?</h2>
