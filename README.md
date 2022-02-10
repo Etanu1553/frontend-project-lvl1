@@ -6,7 +6,7 @@
 [![linterstatus](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml/badge.svg)](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml)
 
 Brain Game:
-_____________
+===========
 
 Brain-Even
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
