@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import { userName, getRandomInt, raund } from '../index.js';
+import { userName, getRandomInt, round } from '../index.js';
 
-export default function gcd() {
+function gcd() {
   let count = 0;
   console.log('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < raund; i += 1) {
+  for (let i = 0; i < round; i += 1) {
     let x = getRandomInt(1, 100);
     let y = getRandomInt(1, 100);
     console.log(`Question: ${x} ${y}`);
@@ -29,3 +29,5 @@ export default function gcd() {
 
   console.log(count === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }
+
+export default gcd();
