@@ -7,10 +7,13 @@
 
 <h1 align="center"> Brain Games</h1>
 
+<h3 align="center"> Brain even </h3>
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
 
+<h3 align="center"> Brain calc </h3>
 [![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)
 
+<h3 align="center"> Brain gcd </h3>
 [![asciicast](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem.svg)](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem)
 
 
