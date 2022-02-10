@@ -17,7 +17,7 @@ export default function progression() {
     }
     console.log(`Question: ${numbers}`);
     const textAnswer = readlineSync.question('Your answer: ');
-    if (textAnswer === answer) {
+    if (Number(textAnswer) === answer) {
       console.log('Correct!');
       count += 1;
     } else {

@@ -7,16 +7,18 @@
 
 <h1 align="center"> Brain Games</h1>
 
-### Brain even 
+### Game brain-even 
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
 
-### Brain calc 
+### Game brain-calc 
 [![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)
 
 
-### Brain gcd 
+### Game brain-gcd 
 [![asciicast](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem.svg)](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem)
 
+### Game brain-progression
+[![asciicast](https://asciinema.org/a/468195.svg)](https://asciinema.org/a/468195)
 
 <h2>Installation</h2>
 <h2>How to launch this games?</h2>
