@@ -7,8 +7,11 @@
 
 Brain Game:
 =======
-Brain Even
+Brain-Even
 [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
+
+Brain-Calc
+[![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)
 
 <h2>Installation</h2>
 <h2>How to launch this games?</h2>

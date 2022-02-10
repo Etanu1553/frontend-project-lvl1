@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, userName } from '../index.js';
+import { getRandomInt, userName, raund } from '../index.js';
 
 export default function calc() {
   const arrSignsProblem = ['+', '-', '*'];
   let count = 0;
   console.log('What is the result of the expression?');
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < raund; i += 1) {
     const x = getRandomInt(1, 100);
     const y = getRandomInt(1, 100);
     const signs = arrSignsProblem[Math.floor(Math.random() * arrSignsProblem.length)];
