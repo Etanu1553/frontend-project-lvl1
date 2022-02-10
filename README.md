@@ -5,12 +5,13 @@
 
 [![linterstatus](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml/badge.svg)](https://github.com/Etanu1553/frontend-project-lvl1/actions/workflows/linterstatus.yml)
 
-<h1 align="center"> Brain Games</h1 >
- [![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
+<h1 align="center"> Brain Games</h1>
 
-Brain-Calc [![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)
+[![asciicast](https://asciinema.org/a/467889.svg)](https://asciinema.org/a/467889)
 
-Brain-gcd  [![asciicast](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem.svg)](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem)
+[![asciicast](https://asciinema.org/a/468038.svg)](https://asciinema.org/a/468038)
+
+[![asciicast](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem.svg)](https://asciinema.org/a/m8HhGBBVqOZTFUSQJDzqTJVem)
 
 
 <h2>Installation</h2>
