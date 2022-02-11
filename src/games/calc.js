@@ -8,24 +8,24 @@ export default function calc() {
   for (let i = 0; i < round; i += 1) {
     const x = getRandomInt(1, 100);
     const y = getRandomInt(1, 100);
-    const signs = arrSignsProblem[Math.floor(Math.random() * arrSignsProblem.length)];
-    let answer;
-    console.log(`Question: ${x} ${signs} ${y}`);
-    if (signs === '-') {
-      answer = x - y;
+    const getSign = arrSignsProblem[Math.floor(Math.random() * arrSignsProblem.length)];
+    let rightAnswer;
+    console.log(`Question: ${x} ${getSign} ${y}`);
+    if (getSign === '-') {
+      rightAnswer = x - y;
     }
-    if (signs === '+') {
-      answer = x + y;
+    if (getSign === '+') {
+      rightAnswer = x + y;
     }
-    if (signs === '*') {
-      answer = x * y;
+    if (getSign === '*') {
+      rightAnswer = x * y;
     }
     const textAnswer = readlineSync.question('Your answer: ');
-    if (answer === Number(textAnswer)) {
+    if (rightAnswer === Number(textAnswer)) {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${answer}'`);
+      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
       break;
     }
   }
