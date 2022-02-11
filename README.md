@@ -26,7 +26,7 @@
 <h2>Installation</h2>
 <h2>How to launch this games?</h2>
 <ol>
-  <li>Install node.js in your sistem(https://nodejs.org/en/)</li>
+  <li>Install node.js [16.x] in your system(https://nodejs.org/en/)</li>
   <li>Clonne this repositorie in your work directory</li>
   <li>Open your terminal</li>
   <li>Install dependensies use command  $ make install</li>
