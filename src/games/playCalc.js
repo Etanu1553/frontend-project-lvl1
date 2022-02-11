@@ -9,23 +9,23 @@ export default function playCalc() {
     const x = getRandomInt(1, 100);
     const y = getRandomInt(1, 100);
     const getSign = arrSignsProblem[Math.floor(Math.random() * arrSignsProblem.length)];
-    let rightAnswer;
+    let correctAnswer;
     console.log(`Question: ${x} ${getSign} ${y}`);
     if (getSign === '-') {
-      rightAnswer = x - y;
+      correctAnswer = x - y;
     }
     if (getSign === '+') {
-      rightAnswer = x + y;
+      correctAnswer = x + y;
     }
     if (getSign === '*') {
-      rightAnswer = x * y;
+      correctAnswer = x * y;
     }
-    const textAnswer = readlineSync.question('Your answer: ');
-    if (rightAnswer === Number(textAnswer)) {
+    const textAnswerUser = readlineSync.question('Your answer: ');
+    if (correctAnswer === Number(textAnswerUser)) {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
+      console.log(`'${Number(textAnswerUser)}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       break;
     }
   }

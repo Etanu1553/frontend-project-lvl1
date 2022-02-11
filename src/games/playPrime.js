@@ -16,15 +16,15 @@ export default function playPrime() {
         break;
       }
     }
-    const answer = numPrime[numPrime.length - 1];
+    const correctAnswer = numPrime[numPrime.length - 1];
     // console.log(numPrime);
     // console.log(answer);
     // const textAnswer = readlineSync.question('Your answer: ');
-    if (textAnswer === answer) {
+    if (textAnswer === correctAnswer) {
       count += 1;
       console.log('Correct!');
     } else {
-      console.log(`'${textAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+      console.log(`'${textAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       break;
     }
   }
