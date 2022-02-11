@@ -20,6 +20,9 @@
 ### Game brain-progression
 [![asciicast](https://asciinema.org/a/468195.svg)](https://asciinema.org/a/468195)
 
+### Game brain-prime
+[![asciicast](https://asciinema.org/a/uIb0Dtrf6X3JBZUrdA1W5GD2s.svg)](https://asciinema.org/a/uIb0Dtrf6X3JBZUrdA1W5GD2s)
+
 <h2>Installation</h2>
 <h2>How to launch this games?</h2>
 <ol>
