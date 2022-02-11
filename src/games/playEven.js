@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import { userName, getRandomInt, round } from '../index.js';
+import { userName, getRandomInt, roundGame } from '../index.js';
 
 export default function playEven() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
   let count = 0;
-  for (let i = 0; i < round; i += 1) {
+  for (let i = 0; i < roundGame; i += 1) {
     const getNumForUser = getRandomInt(1, 100);
     console.log(`Question: ${getNumForUser}`);
     const textAnswer = readlineSync.question('Your answer: ');
@@ -19,5 +19,5 @@ export default function playEven() {
       break;
     }
   }
-  console.log(count === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
+  console.log(count === roundGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }

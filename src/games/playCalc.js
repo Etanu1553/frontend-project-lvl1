@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, userName, round } from '../index.js';
+import { getRandomInt, userName, roundGame } from '../index.js';
 
 export default function playCalc() {
   const arrSignsProblem = ['+', '-', '*'];
   let count = 0;
   console.log('What is the result of the expression?');
-  for (let i = 0; i < round; i += 1) {
+  for (let i = 0; i < roundGame; i += 1) {
     const x = getRandomInt(1, 100);
     const y = getRandomInt(1, 100);
     const getSign = arrSignsProblem[Math.floor(Math.random() * arrSignsProblem.length)];
@@ -30,5 +30,5 @@ export default function playCalc() {
     }
   }
 
-  console.log(count === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
+  console.log(count === roundGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }

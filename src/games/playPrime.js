@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import { userName, getRandomInt, round } from '../index.js';
+import { userName, getRandomInt, roundGame } from '../index.js';
 
 export default function playPrime() {
   let count = 0;
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  for (let i = 0; i < round; i += 1) {
+  for (let i = 0; i < roundGame; i += 1) {
     const num = getRandomInt(1, 100);
     console.log(`Question: ${num}`);
     const numPrime = ['yes'];
@@ -28,5 +28,5 @@ export default function playPrime() {
       break;
     }
   }
-  console.log(count === 3 ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
+  console.log(count === roundGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
 }
