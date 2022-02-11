@@ -8,21 +8,21 @@ export default function playGcd() {
     let x = getRandomInt(1, 100);
     let y = getRandomInt(1, 100);
     console.log(`Question: ${x} ${y}`);
-    let gcdNum;
+    let divisorNum;
     while (x !== y) {
       if (x > y) {
         x -= y;
       } else {
         y -= x;
       }
-      gcdNum = x;
+      divisorNum = x;
     }
     const textAnswer = readlineSync.question('Your answer: ');
-    if (gcdNum === Number(textAnswer)) {
+    if (divisorNum === Number(textAnswer)) {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${gcdNum}'`);
+      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${divisorNum}'`);
       break;
     }
   }
