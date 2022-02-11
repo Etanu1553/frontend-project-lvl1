@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
-import { userName, getRandomInt, roundGame } from '../index.js';
+import {
+  userName, getRandomInt, roundGame, checkAnswer,
+} from '../index.js';
 
 export default function playGcd() {
   let count = 0;
@@ -8,24 +10,19 @@ export default function playGcd() {
     let x = getRandomInt(1, 100);
     let y = getRandomInt(1, 100);
     console.log(`Question: ${x} ${y}`);
-    let divisorNum;
+    let divisorNum = x;
     while (x !== y) {
       if (x > y) {
-        x -= y;
+        x %= y;
       } else {
-        y -= x;
+        y %= x;
       }
       divisorNum = x;
     }
-    if (x === y) {
-      divisorNum = y;
-    }
-    const textAnswer = readlineSync.question('Your answer: ');
-    if (divisorNum === Number(textAnswer)) {
-      console.log('Correct!');
+    const textAnswer = Number(readlineSync.question('Your answer: '));
+    if (checkAnswer(textAnswer, divisorNum)) {
       count += 1;
     } else {
-      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${divisorNum}'`);
       break;
     }
   }

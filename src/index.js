@@ -12,4 +12,15 @@ const getRandomInt = (min, max) => {
 
 const roundGame = 3; // количество раундов игр
 
-export { userName, getRandomInt, roundGame };
+function checkAnswer(userAnswer, correctAnswer) {
+  if (userAnswer === correctAnswer) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`'${(userAnswer)}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+  return false;
+}
+
+export {
+  userName, getRandomInt, roundGame, checkAnswer,
+};

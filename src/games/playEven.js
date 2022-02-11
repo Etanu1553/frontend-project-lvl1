@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
-import { userName, getRandomInt, roundGame } from '../index.js';
+import {
+  userName, getRandomInt, roundGame, checkAnswer,
+} from '../index.js';
 
 export default function playEven() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
@@ -8,14 +10,10 @@ export default function playEven() {
     const getNumForUser = getRandomInt(1, 100);
     console.log(`Question: ${getNumForUser}`);
     const textAnswer = readlineSync.question('Your answer: ');
-    const correct = (textAnswer === 'yes' ? 0 : 1);
-    // console.log(result);
-    if (getNumForUser % 2 === correct) {
-      console.log('Correct!');
+    const correct = (getNumForUser % 2 === 0 ? 'yes' : 'no');
+    if (checkAnswer(textAnswer, correct)) {
       count += 1;
     } else {
-      const negCorrect = textAnswer === 'yes' ? 'no' : 'yes';
-      console.log(`'${textAnswer}' is wrong answer ;(. Correct answer was '${negCorrect}'.`);
       break;
     }
   }

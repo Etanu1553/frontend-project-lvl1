@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, roundGame, userName } from '../index.js';
+import {
+  getRandomInt, roundGame, userName, checkAnswer,
+} from '../index.js';
 
 export default function playProgression() {
   let count = 0;
@@ -16,12 +18,10 @@ export default function playProgression() {
       start += step;
     }
     console.log(`Question: ${numbers}`);
-    const textAnswer = readlineSync.question('Your answer: ');
-    if (Number(textAnswer) === correctNumAnswer) {
-      console.log('Correct!');
+    const textAnswer = Number(readlineSync.question('Your answer: '));
+    if (checkAnswer(textAnswer, correctNumAnswer)) {
       count += 1;
     } else {
-      console.log(`'${Number(textAnswer)}' is wrong answer ;(. Correct answer was '${correctNumAnswer}'`);
       break;
     }
   }
