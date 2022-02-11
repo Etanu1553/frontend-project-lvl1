@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import cliHello from '../src/cli.js';
+import cli from '../src/cli.js';
 
-cliHello();
+cli();
