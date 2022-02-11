@@ -19,7 +19,6 @@ export function gcd(x, y) {
 // console.log(gcd(24, 18))
 
 export default function playGcd() {
-  let count = 0;
   console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i < roundGame; i += 1) {
     const x = getRandomInt(1, 100);
@@ -27,11 +26,10 @@ export default function playGcd() {
     console.log(`Question: ${x} ${y}`);
     const divisorNum = gcd(x, y);
     const textAnswer = Number(readlineSync.question('Your answer: '));
-    if (checkAnswer(textAnswer, divisorNum)) {
-      count += 1;
-    } else {
-      break;
+    if (!checkAnswer(textAnswer, divisorNum)) {
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
-  console.log(count === roundGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 }

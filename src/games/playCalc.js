@@ -5,7 +5,6 @@ import {
 
 export default function playCalc() {
   const signs = '+-*';
-  let count = 0;
   console.log('What is the result of the expression?');
   for (let i = 0; i < roundGame; i += 1) {
     const x = getRandomInt(1, 100);
@@ -14,12 +13,12 @@ export default function playCalc() {
     const array = [x + y, x - y, x * y];
     console.log(`Question: ${x} ${signs[signIndex]} ${y}`);
     const textAnswerUser = Number(readlineSync.question('Your answer: '));
-    if (checkAnswer(textAnswerUser, array[signIndex])) {
-      count += 1;
-    } else {
-      break;
+    if (!checkAnswer(textAnswerUser, array[signIndex])) {
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
-
-  console.log(count === roundGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
+  // console.log(count === roundGame ? `Congratulations, ${userName}!`
+  // : `Let's try again, ${userName}!`);
 }
