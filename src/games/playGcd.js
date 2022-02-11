@@ -17,6 +17,9 @@ export default function playGcd() {
       }
       divisorNum = x;
     }
+    if (x === y) {
+      divisorNum = y;
+    }
     const textAnswer = readlineSync.question('Your answer: ');
     if (divisorNum === Number(textAnswer)) {
       console.log('Correct!');
