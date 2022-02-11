@@ -12,7 +12,7 @@ export default function progression() {
     const answer = start + miss * step;
     let numbers = '';
     for (let x = 0; x < len; x += 1) {
-      numbers += `${x !== miss ? start : '...'} `;
+      numbers += `${x !== miss ? start : '..'} `;
       start += step;
     }
     console.log(`Question: ${numbers}`);
