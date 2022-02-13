@@ -1,16 +1,7 @@
 import readlineSync from 'readline-sync';
-import {
-  userName, getRandomInt, roundGame, checkAnswer,
-} from '../index.js';
-
-export function isPrime(num) {
-  for (let n = 2; n < num; n += 1) {
-    if (num % n === 0) {
-      return 'no';
-    }
-  }
-  return 'yes';
-}
+import userName from '../cli.js';
+import { roundGame, checkAnswer } from '../index.js';
+import { getRandomInt, isPrime } from '../utils.js';
 
 export default function playPrime() {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

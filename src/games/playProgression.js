@@ -1,17 +1,7 @@
 import readlineSync from 'readline-sync';
-import {
-  getRandomInt, roundGame, userName, checkAnswer,
-} from '../index.js';
-
-export function genLine(start, step, len, miss) {
-  let i = start;
-  let numbers = '';
-  for (let x = 0; x < len; x += 1) {
-    numbers += `${x !== miss ? i : '..'} `;
-    i += step;
-  }
-  return numbers;
-}
+import userName from '../cli.js';
+import { roundGame, checkAnswer } from '../index.js';
+import { getRandomInt, genLine } from '../utils.js';
 
 export default function playProgression() {
   console.log('What number is missing in the progression?');

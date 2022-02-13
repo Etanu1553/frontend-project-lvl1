@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import {
-  getRandomInt, userName, roundGame, checkAnswer,
-} from '../index.js';
+import userName from '../cli.js';
+import { roundGame, checkAnswer } from '../index.js';
+import { getRandomInt } from '../utils.js';
 
 export default function playCalc() {
   const signs = '+-*';

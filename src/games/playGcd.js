@@ -1,21 +1,7 @@
 import readlineSync from 'readline-sync';
-import {
-  userName, getRandomInt, roundGame, checkAnswer,
-} from '../index.js';
-
-export function gcd(x, y) {
-  let a = x;
-  let b = y;
-  while (a !== b) {
-    if (a > b) {
-      a -= b;
-    } else {
-      b -= a;
-    }
-  }
-  return a;
-}
-
+import userName from '../cli.js';
+import { roundGame, checkAnswer } from '../index.js';
+import { getRandomInt, gcd } from '../utils.js';
 // console.log(gcd(24, 18))
 
 export default function playGcd() {

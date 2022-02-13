@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import {
-  userName, getRandomInt, roundGame, checkAnswer,
-} from '../index.js';
+import userName from '../cli.js';
+import { roundGame, checkAnswer } from '../index.js';
+import { getRandomInt } from '../utils.js';
 
 export default function playEven() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
