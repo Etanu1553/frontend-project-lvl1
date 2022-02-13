@@ -7,7 +7,7 @@ export default function playEven() {
   console.log('Answer "yes" if the number is even, otherwise answer is "no".');
   for (let i = 0; i < roundGame; i += 1) {
     const getNumForUser = getRandomInt(1, 100);
-    console.log(`Question: ${getNumForUser}`);
+    console.log(`Question: ${Number(getNumForUser)}`);
     const textAnswer = readlineSync.question('Your answer: ');
     const correct = (getNumForUser % 2 === 0 ? 'yes' : 'no');
     if (!checkAnswer(textAnswer, correct)) {
