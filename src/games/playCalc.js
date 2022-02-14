@@ -19,6 +19,4 @@ export default function playCalc() {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-  // console.log(count === roundGame ? `Congratulations, ${userName}!`
-  // : `Let's try again, ${userName}!`);
 }
