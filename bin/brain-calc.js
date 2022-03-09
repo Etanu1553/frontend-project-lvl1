@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playCalc from '../src/games/playCalc.js';
+import engine from '../src/index.js';
+import { gameDescription, generateRound } from '../src/games/playCalc.js';
 
-playCalc();
+engine(gameDescription, generateRound);

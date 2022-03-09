@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import cli from '../src/cli.js';
+import greeting from '../src/cli.js';
 
-cli();
+const userName = greeting();
+console.log(userName, userName);

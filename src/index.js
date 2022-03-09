@@ -1,20 +1,18 @@
 import readlineSync from 'readline-sync';
+import { greeting, roundGame } from './cli.js';
+import { checkAnswer } from './utils.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}!`); // экспортируем приветствие
-
-const roundGame = 3; // количество раундов игр
-
-function checkAnswer(userAnswer, correctAnswer) {
-  if (userAnswer === correctAnswer) {
-    console.log('Correct!');
-    return true;
+export default function engine(description, round) {
+  const UserName = greeting();
+  console.log(description);
+  for (let i = 0; i < roundGame; i += 1) {
+    const [text, correct] = round();
+    console.log(`Question: ${text}`);
+    const textAnswer = readlineSync.question('Your answer: ');
+    if (!checkAnswer(textAnswer, correct)) {
+      console.log(`Let's try again, ${UserName}!`);
+      return;
+    }
   }
-  console.log(`'${(userAnswer)}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
-  return false;
+  console.log(`Congratulations, ${UserName}!`);
 }
-
-export {
-  userName, roundGame, checkAnswer,
-};

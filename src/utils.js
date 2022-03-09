@@ -1,19 +1,15 @@
-const getRandomInt = (min, max) => {
-  Math.ceil(min);
-  Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-function isPrime(num) {
+const isPrime = (num) => {
   for (let n = 2; n < num; n += 1) {
     if (num % n === 0) {
       return 'no';
     }
   }
   return 'yes';
-}
+};
 
-function gcd(x, y) {
+const gcd = (x, y) => {
   let a = x;
   let b = y;
   while (a !== b) {
@@ -24,9 +20,9 @@ function gcd(x, y) {
     }
   }
   return a;
-}
+};
 
-function genLine(start, step, len, miss) {
+const genLine = (start, step, len, miss) => {
   let i = start;
   let numbers = '';
   for (let x = 0; x < len; x += 1) {
@@ -34,8 +30,17 @@ function genLine(start, step, len, miss) {
     i += step;
   }
   return numbers;
-}
+};
+
+const checkAnswer = (userAnswer, correctAnswer) => {
+  if (userAnswer === correctAnswer) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`'${(userAnswer)}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+  return false;
+};
 
 export {
-  getRandomInt, isPrime, genLine, gcd,
+  getRandomInt, isPrime, genLine, gcd, checkAnswer,
 };
