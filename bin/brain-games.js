@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import greeting from '../src/cli.js';
+import { greeting } from '../src/cli.js';
 
+// console.log('test');
 const userName = greeting();
-console.log(userName, userName);
+console.log(`Hello, ${userName}!`); // экспортируем приветствие
