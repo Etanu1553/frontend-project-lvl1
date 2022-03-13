@@ -5,9 +5,3 @@ export default function greeting() {
   const userName = readlineSync.question('May I have your name? ');
   return userName;
 }
-
-const roundGame = 3; // количество раундов игр
-
-export {
-  greeting, roundGame,
-};

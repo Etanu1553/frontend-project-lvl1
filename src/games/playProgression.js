@@ -1,4 +1,14 @@
-import { getRandomInt, genLine } from '../utils.js';
+import getRandomInt from '../utils.js';
+
+const genLine = (start, step, len, miss) => {
+  let i = start;
+  let numbers = '';
+  for (let x = 0; x < len; x += 1) {
+    numbers += `${x !== miss ? i : '..'} `;
+    i += step;
+  }
+  return numbers;
+};
 
 const generateRound = () => {
   const start = getRandomInt(1, 100);
