@@ -1,4 +1,7 @@
 import getRandomInt from '../utils.js';
+import engine from '../index.js';
+
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   for (let n = 2; n < num; n += 1) {
@@ -14,8 +17,6 @@ const generateRound = () => {
   return [x, isPrime(x)];
 };
 
-const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-export {
-  gameDescription, generateRound,
+export default () => {
+  engine(gameDescription, generateRound);
 };

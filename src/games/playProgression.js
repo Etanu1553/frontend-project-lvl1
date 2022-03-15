@@ -1,4 +1,7 @@
 import getRandomInt from '../utils.js';
+import engine from '../index.js';
+
+const gameDescription = 'What number is missing in the progression?';
 
 const genLine = (start, step, len, miss) => {
   let i = start;
@@ -18,8 +21,6 @@ const generateRound = () => {
   return [genLine(start, step, len, miss), String(start + miss * step)];
 };
 
-const gameDescription = 'What number is missing in the progression?';
-
-export {
-  gameDescription, generateRound,
+export default () => {
+  engine(gameDescription, generateRound);
 };
