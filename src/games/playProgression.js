@@ -18,7 +18,9 @@ const generateRound = () => {
   const step = getRandomInt(2, 10);
   const len = getRandomInt(5, 12);
   const miss = getRandomInt(1, len - 1);
-  return [genLine(start, step, len, miss), String(start + miss * step)];
+  const question = genLine(start, step, len, miss);
+  const answer = String(start + miss * step);
+  return [question, answer];
 };
 
 export default () => {

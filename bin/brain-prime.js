@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import engine from '../src/games/playPrime.js';
+import runEngine from '../src/games/playPrime.js';
 
-engine();
+runEngine();

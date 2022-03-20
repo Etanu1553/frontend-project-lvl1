@@ -1,7 +1,7 @@
 import getRandomInt from '../utils.js';
 import engine from '../index.js';
 
-const signs = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 const gameDescription = 'What is the result of the expression?';
 
 const generateAnswer = (a, b, sign) => {
@@ -20,10 +20,10 @@ const generateAnswer = (a, b, sign) => {
 const generateRound = () => {
   const x = getRandomInt(1, 100);
   const y = getRandomInt(1, 100);
-  const signIndex = getRandomInt(0, signs.length - 1);
-  const question = `${x} ${signs[signIndex]} ${y}`;
-  const correctAnswer = String(generateAnswer(x, y, signs[signIndex]));
-  return [question, correctAnswer];
+  const signIndex = getRandomInt(0, operators.length - 1);
+  const question = `${x} ${operators[signIndex]} ${y}`;
+  const answer = String(generateAnswer(x, y, operators[signIndex]));
+  return [question, answer];
 };
 
 export default () => {

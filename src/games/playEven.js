@@ -3,9 +3,13 @@ import engine from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer is "no".';
 
+const isEven = (x) => x % 2 === 0;
+
 const generateRound = () => {
   const x = getRandomInt(1, 100);
-  return [x, (x % 2 === 0 ? 'yes' : 'no')];
+  const question = String(x);
+  const answer = isEven(x) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 export default () => {

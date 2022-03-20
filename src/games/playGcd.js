@@ -19,7 +19,9 @@ const gcd = (x, y) => {
 const generateRound = () => {
   const x = getRandomInt(1, 100);
   const y = getRandomInt(1, 100);
-  return [`${x} ${y}`, String(gcd(x, y))];
+  const question = `${x} ${y}`;
+  const answer = String(gcd(x, y));
+  return [question, answer];
 };
 
 export default () => {
